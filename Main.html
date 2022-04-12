@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <title>KitChoisesMatter</title>
+        <link rel = "stylesheet" href = "Style.css"/>
+
+
+    </head>
+</head>
+<body>
+    <script src="Script.js"></script>
+    
+    <img id="OpeningScene"src="OpeningScene.jpg" class="CenterMaker">
+
+    <dialog id="DialogBoks" open>Mafia boss: "Tag pengene og lad mig gå"</dialog> 
+    <button id="Button1" class="CenterMakerChoice1" onclick="Choice1()"> Tag imod bestikkelsen</button>
+    <button id="Button2" class="CenterMakerChoice2" onclick="Choice2()"> Arrester ham for mordet </button>
+
+
+
+
+    <script>
+        function ChangeImage(ButtonId,NewPicture){// Her har vi en funktion der fanger billedets id og ændrer det til et nyt når man har nok af upgraden
+            var image = document.getElementById(ButtonId);//Her fanger vi det billed vi starter med
+            image.src = NewPicture;// Her ændrer vi billedet til det nye
+        } 
+        canvas = document.getElementById("TestBilled")
+        canvas.width = window.innerWidth-30;
+        canvas.height = window.innerHeight-60;
+
+        </script>
+
+
+</body>
+</html>
